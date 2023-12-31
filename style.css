@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Heebo:wght@100;300;400;500;600;700;800;900&family=Josefin+Sans:wght@400;700&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@600&family=Roboto:wght@100;300;400;500;700&family=Rubik:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Heebo:wght@100;300;400;500;600;700;800;900&family=Josefin+Sans:wght@400;700&family=Lobster&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@600&family=Roboto:wght@100;300;400;500;700&family=Rubik:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    letter-spacing: 1px;
+}
+
+html, body {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.contact-zgoraj {
+    height: 3vh;
+    background-color: rgb(14, 14, 14);
+    display: flex;
+    align-items: center;
+    
+}
+
+#span1 {
+    margin-left: 10%;;
+}
+
+#span2 {
+    margin-left: 30px;
+}
+
+.contact {
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.navbar {
+    width: 100%;
+    height: 10vh;
+    /* background-color: 	#463324; */
+    background-color: rgba(0, 0, 0, 0.61);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+    /* top: 3vh; */
+}
+
+.navbar.fixed {
+    position: fixed;
+    top: 0;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 500px; */
+}
+
+li {
+    list-style: none;
+}
+
+.logo {
+    /* color: white;
+    font-size: 36px; */
+    height: 4vh;
+}
+
+.nav-link {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    transition: all ease .2s;
+}
+
+.nav-link:hover {
+    /* color: rgb(194, 194, 194); */
+    color: 	#C4A484;
+}
+
+
+.landing-page {
+    width: 100%;
+    height: 97vh;
+    background-image: url(./pexels-igor-starkov-1307698.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.header {
+    font-size:64px;
+    color: white;
+    font-family: Lobster;
+}
+
+.landing-paragraph {
+    width: 64%;
+    color: white;
+    text-align: center;
+    line-height: 24px;
+    font-size: 18px;
+    margin-top: 24px;
+    margin-bottom: 64px;
+}
+
+.crno {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.644);
+    position: absolute;
+    z-index: 1;
+}
+
+.landing-page-content {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+}
+
+.dol {
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    border: solid 4px white;
+    background-color:transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: absolute;
+}
+
+.fa-arrow-down {
+    color: white;
+    transform: scale(2);
+    transition: all 0.2s ease;
+
+}
+
+.dol:hover {
+    height: 100px;
+    border-radius: 50px;
+    padding-top: 40px;
+}
+
+.meni:hover {
+    background-color: rgba(255, 166, 0, 0.274);
+    /* background-color:rgba(0, 0, 0, 0.466) */
+}
+
+.o-nas-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+    box-sizing: border-box;
+    padding: 0 10% 0 10%;
+}
+
+.o-nas-content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.o-nas-img {
+    height: 60vh;
+    border: 5px solid rgb(96,67,33);
+    padding: 10px;
+}
+
+.o-nas-header {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: rgb(35,35,35);
+    font-family: Lobster, Monaco;
+}
+
+.o-nas-paragraph {
+    width: 90%;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+
+.o-nas-links{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 80px;
+}
+
+.o-nas-link {
+    /* transform: scale(3); */
+    font-size:4em;
+    color: rgb(35,35,35);
+    cursor: pointer;
+    transition: all ease .2s;
+}
+
+.o-nas-link:hover {
+    color: black;
+}
+
+.ponudba {
+    height: 60px;
+    width: 200px;
+    background-color: #1E1E1E;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.ponudba:hover {
+    background-color: black;
+}
+
+.priporocamo {
+    height: 70vh;
+    width:100%;
+    background-color: #1E1E1E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.priporocamo-header {
+    font-size: 48px;
+    font-family: Lobster;
+    color: rgba(255, 255, 255, 0.925);
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    width: 80%;
+    margin-left: 10%;
+    overflow-x: hidden;
+}
+
+.priporocamo-item {
+    width: 33%;
+}
+
+.meni {
+    height: 100vh;
+    width:100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(./pexels-marta-dzedyshko-2775827.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}    
+
+.meni-header {
+    z-index: 1;
+    font-size: 64px;
+    color: white;
+    font-family: Lobster;
+    
+}
+
+a {
+    z-index: 3;
+}
+
+.ponudba-btn {
+    z-index: 3;
+    margin-top: 40px;
+    height: 60px;
+    width: 260px;
+    background-color: white;
+    border: none;
+    color: #1E1E1E;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+}
+
+.ponudba-btn:hover {
+    background-color: rgb(197, 197, 197);
+    
+}
+
+.galerija-section {
+    height:40vh;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.image-item {
+    height:40vh;
+    width:25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.image-item1 {
+    background-image: url(./images/pexels-chevanon-photography-312418\ \(1\).jpg);
+    
+}
+
+.image-item2 {
+    background-image: url(./images/pexels-tim-douglas-6205600.jpg);
+    
+}
+
+.image-item3 {
+    background-image: url(./images/pexels-lisa-fotios-2193600.jpg);
+    
+}
+
+.image-item4 {
+    background-image: url(./images/pexels-engin-akyurt-2299028.jpg);
+    
+}
+
+.galerija-crno {
+    width:100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.89);
+    transition: all ease .2s;
+}
+
+.image-item:hover {
+
+.galerija-crno {
+
+    background-color: rgba(0, 0, 0, 0);
+}
+}
+
+.lokacija {
+    width:100%;
+    height: 80vh;
+    
+}
+
+.rezervacija-section {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+iframe {
+    width: 100%;
+}
+
+.rezervacija-header {
+    font-size: 48px;
+    color: #232323;
+    font-family: Lobster;
+    margin-bottom: 20px;
+}
+
+.rezervacija-paragraph {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction:column;
+    height: 50vh;
+}
+
+.rezervacija-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction:row;
+}
+
+.rezervacija-input {
+    display: flex;
+    flex-direction:column
+}
+
+.input-rezervacija {
+    height:36px;
+    width: 200px;
+    border: 2px solid #232323;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 18px;
+}
+
+
+.message {
+    width: 100%;
+    height: 200px;
+}
+
+label {
+    font-size: 18px;
+}
+
+.rezervacija-submit {
+    margin-top: 20px;
+    height: 60px;
+    width: 300px;
+    background-color: #1E1E1E;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.rezervacija-submit:hover {
+    background-color: black;
+}
+
+.kontakt {
+    background-color: #1E1E1E;
+    width: 25%;
+    height: 40%;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 10%;
+    padding: 48px 24px 48px 24px;
+    box-sizing: border-box;
+    display: flex;
+
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.kontakt-header {
+    font-size: 24px;
+    color: white;
+}
+
+.naslov {
+    color: white;
+    margin-bottom: 10px;
+}
+
+#naslov {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-lokacija {
+    color: white;
+    text-decoration: none;
+}
+
+.footer {
+    height: 50vh;
+    width: 100%;
+    background-color: #1E1E1E;
+}
+
+.footer-logo {
+    /* transform: scale(.2); */
+    height: 48px;
+}
+
+.upper-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 70%;
+    width: 80%;
+    margin: auto;
+}
+
+.footer-text {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 24px;
+    
+}
+
+.footer-title {
+    color: orange;
+}
+
+.lower-footer {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+hr {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    color: rgb(94, 94, 94);
+    border: solid 1px;
+}
+
+.fa-facebook, .fa-instagram {
+    transform: scale(1.6);
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all ease .2s;
+}
+
+.fa-facebook:hover, .fa-instagram:hover {
+    color: rgb(175, 175, 175);
+}
