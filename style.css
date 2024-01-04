@@ -184,6 +184,17 @@ li {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+    transform: translateY(60px);
+    opacity: 0;
+    transition: all ease 1s;
+
+}
+
+.o-nas-content-active {
+    transform: translateY(0px);
+    opacity: 1;
+    transition: all ease 1s;
+    
 }
 
 .o-nas-img {
@@ -202,8 +213,18 @@ li {
 .o-nas-paragraph {
     width: 90%;
     line-height: 24px;
+    transform: translateY(0px);
     margin-bottom: 20px;
+    /* opacity: 0; */
+    transition: all ease 1s;
 }
+
+/* .o-nas-paragraph-active {
+    transform: translateY(0px);
+    opacity: 1;
+    transition: all ease .6s;
+
+} */
 
 
 .o-nas-links{

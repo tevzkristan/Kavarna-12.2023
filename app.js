@@ -42,3 +42,17 @@ const navSlide = () => {
 };
 
 navSlide();
+
+
+function scrollAppear() {
+  var oNasText = document.querySelector('.o-nas-content');
+  var oNasPosition = oNasText.getBoundingClientRect().top;
+  var screenPosition = window.innerHeight / 1.5;
+
+  if (oNasPosition < screenPosition) {
+    oNasText.classList.add('o-nas-content-active')
+    console.log('Active');
+  }
+}
+
+window.addEventListener('scroll', scrollAppear);
